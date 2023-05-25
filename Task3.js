@@ -3,7 +3,7 @@
 
 function solution(number) {
     // Convert the number to a Roman numeral
-    let numerals = [
+   const numerals = [
       "M",
       "CM",
       "D",
@@ -19,7 +19,7 @@ function solution(number) {
       "I",
     ];
     // Corresponding values for Roman numerals
-    let values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+    const values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
   
     // Use reduce method to iterate over numerals array and build the Roman numeral representation
     return numerals.reduce(function (result, numeral, index) {

@@ -6,6 +6,4 @@
 // For n = 5678545 the function should return '5,678,545';
 // for n = -420902 the function should return '-420,902'.
 
-var numberFormat = function (number) {
-    return number.toLocaleString()
-};
+const numberFormat = number => number.toLocaleString();
