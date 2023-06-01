@@ -7,16 +7,13 @@ function solution(roman) {
   
     let decimalValue = 0;
     for (let i = 0; i < roman.length; i++) {
-      // Get the decimal value of the current Roman numeral
+      
       const currentValue = romanValues[roman[i]];
   
-      // Get the decimal value of the next Roman numeral (if exists)
       const nextValue = romanValues[roman[i + 1]];
   
-      // Add or subtract the current decimal value based on its comparison with the next value
       decimalValue += currentValue < nextValue ? -currentValue : currentValue;
     }
     
-    // Return the calculated decimal value
     return decimalValue;
   }
